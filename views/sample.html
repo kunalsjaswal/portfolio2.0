@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/static/images/fevicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/static/port.css">
+    <link href="http://fonts.cdnfonts.com/css/games" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b39a5f7e00.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>KS Portfolio</title>
+    
+</head>
+<body>
+
+    <article class="main">
+
+    <section class="page1" id="pagee1">
+        <!-- navbar  -->
+        <nav>
+            <section class="layer1">
+                <h1>PORTFOLIO</h1>
+                <div id="dark" class="theme1" onclick="darktheme()"></div>
+                <div id="slide" class="slider"></div>
+                <div id="light" class="theme2" onclick="lighttheme()"></div>
+                <div id="dark1" class="theme12" onclick="darktheme()"></div>
+                <div id="slide2" class="slider2"></div>
+                <div id="slide3" class="slider3"></div>
+                <div id="light2" class="theme22" onclick="lighttheme()"></div>
+
+            </section>
+            <section class="layer2">
+                <ul>
+                    <li><a href="#" id="a1" onclick="aboutme()">About Me
+                <span id="line1"></span>
+                    </a></li>
+                    <li><a href="#" id="a2" onclick="contactme()">Contact Me
+                <span id="line2"></span>
+                    </a></li>
+                </ul>
+            </section>
+        </nav>
+
+     
+
+        <!-- parallex  -->
+        <section class="parallex1">
+        <div class="parallex" id="para1">
+            <img src="/static/images/earth.png" alt="" id="earth">
+        </div>
+        <div class="parallex2" id="para2">
+            <img src="/static/images/earth.png" alt="" id="earth2">
+        </div>
+
+        <div class="cloud" id="cloud1">
+            <img src="/static/images/clouds.jpg" alt="">
+        </div>
+ 
+        <div class="satellite2">
+            <img src="/static/images/sat2.png" alt="">
+        </div>
+        <div class="satellite1">
+            <img src="/static/images/sat1.png" alt="">
+        </div>
+        <div class="lazer" id="beam">
+            <img src="/static/images/lazer.png" alt="">
+        </div>
+
+        <div class="moon" id="moon1">
+            <img src="/static/images/moon.png" alt="">
+        </div>
+        <div class="moon2" id="moon12">
+            <img src="/static/images/moon.png" alt="">
+        </div>
+
+        </section>
+
+        <!-- about me  -->
+        <div class="aboutme" id="about_section">
+            <h1>Hello Human</h1>
+            <div id="close" onclick="closeabout()">close</div>
+            <ul>
+                <li>My name is Kunal Singh Jaswal</li>
+                <li>I am from Himachal Pradesh</li>
+                <li>Currently pursuing B-tech in CSE from <br> Chandigarh University</li>
+                <li>To explore more go down</li>
+            </ul>
+            <img src="/static/images/kunaldark.jpg" alt="">
+        </div>
+
+        <!-- contact me -->
+
+        <div class="contact" id="contact_section">
+            <div id="close2" onclick="closecontact()">close</div>
+            <div class="social">
+                <i class="fa-solid fa-envelope"></i><span>kunal23singh0@gmail.com</span><br>
+                <i class="fa-brands fa-linkedin"></i><span>Kunal singh jaswal</span><br>
+                <i class="fa-brands fa-twitter"></i><span>@kunalSjaswal</span><br>
+                <i class="fa-brands fa-instagram"></i><span>@k_s_jaswal</span><br>
+                <i class="fa-brands fa-facebook-f"></i><span>Kunal Singh Jaswal</span>
+            </div>
+            <div class="address">
+                <i class="fa-solid fa-phone"></i><span>+91 8350878821</span>
+                <div>District - kangra</div>
+                <div>State - Himachal pradesh</div>
+                <div>Pincode - 176401</div>
+                <i class="fa-solid fa-flag"></i><span>INDIAN</span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <div id="seperation"></div>
+
+    <!-- page2  -->
+
+    <section class="page2" id="pagee2">
+        <div class="rocket" id="roc1">
+        <img src="/static/images/rocket.png" alt="" id="explore" onclick="changetheme()">
+        </div>
+        <div class="rocket2" id="roc2">
+        <img src="/static/images/rocket.png" alt="" id="explore2">
+       </div>
+
+        <div class="audio" id="aud">
+        <audio controls id="myaudio">
+            <source src="/static/images/audio.mpeg" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio>
+        </div>
+
+    </section>
+</article>
+
+    
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="/static/json.js"></script>
+
+</body>
+</html>

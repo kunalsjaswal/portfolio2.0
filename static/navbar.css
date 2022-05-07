@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.nav {
+  background-color: rgb(29, 28, 28);
+  padding: 20px;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  color: white;
+  transition: 1s;
+}
+.nav h2 {
+  font-size: 2em;
+  float: left;
+}
+.list {
+  float: right;
+  width: 70%;
+}
+.list div {
+  position: absolute;
+  text-align: center;
+  padding: 8px 0px 8px 0px;
+  font-size: 1.3vw;
+  transition: 1s;
+}
+.home {
+  width: 5%;
+}
+.contact {
+  width: 7%;
+  left: 40%;
+}
+.about {
+  left: 50%;
+  width: 6%;
+}
+
+.list div:hover {
+  background-color: rgb(63, 61, 61);
+  cursor: pointer;
+}
+.add {
+  font-size: 1vw;
+  position: absolute;
+  width: 15%;
+  right: 0%;
+  top: 2%;
+}
+
+
+/* <!-- navbar for  720 - 500 px --> */
+@media (max-width: 1200px) {
+  .list div {
+    font-size: 2vw;
+  }
+  .nav h2 {
+    font-size: 4vw;
+  }
+
+  .add{
+    font-size: 1.2vw;
+    width: 20%;
+    margin-right: 0;
+
+  }
+  .about {
+    left: 53%;
+  }
+}
+@media (max-width: 800px) {
+  .nav {
+    height: 120px;
+  }
+  .nav h2 {
+    float: none;
+    text-align: center;
+    font-size: 5vw;
+  }
+
+  .list div {
+    font-size: 2.5vw;
+    margin-top: 2%;
+  }
+  .add{
+    font-size: 1.7vw;
+    width: 25%;
+  }
+  .home {
+    left: 20%;
+    width: 10%;
+  }
+
+  .contact {
+    left: 40%;
+    width: 14%;
+  }
+  .about {
+    left: 65%;
+    width: 12%;
+  }
+}
+.cllk {
+  transition: 2s;
+  display: none;
+}
+@media (max-width: 500px) {
+
+  .add{
+    font-size: 2.5vw;
+    width: 35%;
+    margin-right: 0%;
+    margin-top: -1%;
+  }
+  .list {
+    display: none;
+  }
+  .nav {
+    padding: 0;
+    height: 50px;
+  }
+  .nav h2 {
+    margin-top: 2%;
+    font-size: 6vw;
+    margin-right: 20%;
+  }
+
+  .cllk {
+    position: relative;
+    display: contents;
+    width: 100%;
+    color: white;
+    top: 6%;
+    transition: 2s;
+  }
+  .list2 {
+    position: fixed;
+    background-color: rgb(29, 28, 28);
+    width: 35%;
+    font-size: 0.8em;
+    height: 90%;
+    transition: 2s;
+    display: none;
+  }
+  .list2 div {
+    width: 100%;
+    text-align: center;
+    transition: 2s;
+    padding: 5px;
+    margin-top: 10%;
+  }
+  .list2 div:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+  }
+  .list2 div:hover .inp2 {
+    color: white;
+  }
+  .home2 {
+    margin-top: 30%;
+  }
+
+  
+  .list2 div:hover .inb2 {
+    color: white;
+  }
+
+  .portfolio2:hover .inp2,
+  .blog2:hover .inb2 {
+    display: block;
+    animation-name: inport;
+    animation-duration: 2s;
+  }
+  .home2 a {
+    text-decoration: none;
+    color: white;
+  }
+  .home2:hover a {
+    color: black;
+  }
+
+  @keyframes inport {
+    0% {
+      opacity: 0.2;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  /* bars coding  */
+
+  .bars {
+    position: absolute;
+    width: 8%;
+    z-index: 3;
+    height: 40px;
+    top: 1%;
+    left: 1%;
+  }
+  .bar1,
+  .bar2,
+  .bar3 {
+    margin-bottom: 5px;
+    background-color: white;
+    width: 20px;
+    height: 2px;
+    margin-left: 20%;
+    transition: 2s;
+  }
+  .bar1 {
+    margin-top: 20%;
+  }
+  .change .bar2 {
+    opacity: 0;
+  }
+  .change .bar1 {
+    transform: rotate(-45deg) translate(-10px, 1px);
+  }
+  .change .bar3 {
+    transform: rotate(45deg) translate(-8px, -1px);
+  }
+  .change .list2 {
+    display: block;
+    animation-name: navb;
+    animation-duration: 2s;
+    transition: 2s;
+    animation-direction: alternate;
+  }
+  @keyframes navb {
+    0% {
+      width: 0;
+      opacity: 0.2;
+    }
+    100% {
+      width: 35%;
+      opacity: 1;
+    }
+  }
+}
